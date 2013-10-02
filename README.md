@@ -24,3 +24,20 @@ The above command will create
 |- test
 ||- my-test.js
 ```
+
+The contents of my-test.js will be
+
+```js
+var chai = require('chai');
+var expect = chai.expect;
+var assert = chai.assert;
+var should = chai.should();
+
+describe('MyTest', function () {
+	
+	it('should be sane', function () {
+		expect(1).to.equal(1);
+	});
+
+});
+```
